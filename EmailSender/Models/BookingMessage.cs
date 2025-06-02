@@ -2,6 +2,7 @@
 
 public class BookingMessage
 {
+    public string MessageType { get; set; } = null!;
     public string EventName { get; set; } = null!;
     public string PackageName { get; set; } = null!;
     public DateTime EventDate { get; set; }
