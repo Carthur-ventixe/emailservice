@@ -15,7 +15,7 @@ public class EmailService(EmailClient emailClient)
     {
         var emailMessage = new EmailMessage(
           senderAddress: "DoNotReply@00b84a5f-4825-429d-8991-e3bdf57df9e1.azurecomm.net",
-          content: new EmailContent("Booking Confirmation")
+          content: new EmailContent("Verify email")
           {
               PlainText = $@"Thanks for your booking",
               Html = @$"
@@ -74,7 +74,7 @@ public class EmailService(EmailClient emailClient)
 
                       <h4 style='color: #2c3e50; margin-top: 24px;'>Event Details</h4>
                       <p style='font-size: 16px; margin: 8px 0;'><strong>Event:</strong> {bookingMessage.EventName}</p>                      
-                      <p style='font-size: 16px; margin: 8px 0;'><strong>Location:</strong> Luleå, Sweden</p>
+                      <p style='font-size: 16px; margin: 8px 0;'><strong>Location:</strong>{bookingMessage.Location}</p>
                       <p style='font-size: 16px; margin: 8px 0;'><strong>Date:</strong> {bookingMessage.EventDate}</p>
 
                       <h4 style='color: #2c3e50; margin-top: 24px;'>Customer Details</h4>
