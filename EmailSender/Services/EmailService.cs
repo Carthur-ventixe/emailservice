@@ -30,7 +30,7 @@ public class EmailService(EmailClient emailClient)
                                 <h2 style='color: #37437D;'>Confirm Your Email</h2>
                                 <p style='font-size: 16px; color: #1C2346;'>Thank you for registering! Please verify your email by clicking the button below.</p>
                                 <p style='margin: 30px 0;'>
-                                <a href='http://localhost:5173/confirmed?email={message.Email}&token={message.Token}'
+                                <a href='https://delightful-sea-0cec22803.6.azurestaticapps.net/confirmed?email={message.Email}&token={message.Token}'
                                     style='padding: 12px 24px; background-color: #F26CF9; color: #FFFFFF; text-decoration: none; border-radius: 30px; display: inline-block; font-size: 16px;'>
                                     Verify Email
                                 </a>
@@ -74,7 +74,7 @@ public class EmailService(EmailClient emailClient)
 
                       <h4 style='color: #2c3e50; margin-top: 24px;'>Event Details</h4>
                       <p style='font-size: 16px; margin: 8px 0;'><strong>Event:</strong> {bookingMessage.EventName}</p>                      
-                      <p style='font-size: 16px; margin: 8px 0;'><strong>Location:</strong>{bookingMessage.Location}</p>
+                      <p style='font-size: 16px; margin: 8px 0;'><strong>Location:</strong> {bookingMessage.Location}</p>
                       <p style='font-size: 16px; margin: 8px 0;'><strong>Date:</strong> {bookingMessage.EventDate}</p>
 
                       <h4 style='color: #2c3e50; margin-top: 24px;'>Customer Details</h4>
